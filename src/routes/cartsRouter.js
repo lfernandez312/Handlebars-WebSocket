@@ -1,14 +1,13 @@
 import express from 'express';
-
 import fs from 'fs';
 
-const cartsFile = 'carrito.json';
+const CARTS_FILE_PATH = './carrito.json';
 let carts = [];
 
 // Función para leer los carritos desde el archivo
 const readCarts = () => {
   try {
-    const cartsData = fs.readFileSync(cartsFile, 'utf8');
+    const cartsData = fs.readFileSync(CARTS_FILE_PATH, 'utf8');
     carts = JSON.parse(cartsData);
   } catch (error) {
     carts = [];
@@ -18,16 +17,16 @@ const readCarts = () => {
 // Función para escribir los carritos en el archivo
 const writeCarts = async () => {
   try {
-    await fs.promises.writeFile(cartsFile, JSON.stringify(carts, null, 2));
+    await fs.promises.writeFile(CARTS_FILE_PATH, JSON.stringify(carts, null, 2));
   } catch (error) {
     console.error('Error al escribir en el archivo de carritos', error);
   }
 };
 
 // Crear el archivo de carrito.json si no existe
-fs.access(cartsFile, fs.constants.F_OK, (err) => {
+fs.access(CARTS_FILE_PATH, fs.constants.F_OK, (err) => {
   if (err) {
-    fs.writeFileSync(cartsFile, '[]', 'utf8');
+    fs.writeFileSync(CARTS_FILE_PATH, '[]', 'utf8');
   } else {
     readCarts();
   }

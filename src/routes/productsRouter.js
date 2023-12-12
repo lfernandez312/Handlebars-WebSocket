@@ -3,7 +3,7 @@ import express from 'express';
 import fs from 'fs/promises';
 const router = express.Router();
 
-const PRODUCTS_FILE_PATH = 'productos.json';
+const PRODUCTS_FILE_PATH = './productos.json';
 
 // Función para leer los productos desde el archivo
 const readProducts = async () => {
