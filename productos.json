@@ -1,0 +1,91 @@
+[
+    {
+      "id": 2,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC123",
+      "price": 29.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electrónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC123",
+      "price": 29.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electrónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC12344244",
+      "price": 2999.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electrónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC12333333444444433",
+      "price": 29.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electrónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC12333333435345345345435444444433",
+      "price": 29.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electrónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 6,
+      "status": true,
+      "thumbnails": []
+    },
+    {
+      "id": 7,
+      "title": "Producto de ejemplo",
+      "description": "Descripción del producto",
+      "code": "ABC12333333435345345345435444444433",
+      "price": 29.99,
+      "status": true,
+      "stock": 50,
+      "category": "Electroooónicos",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    }
+  ]
