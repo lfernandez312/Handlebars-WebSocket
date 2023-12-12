@@ -1,4 +1,3 @@
-// productsRouter.js
 import express from 'express';
 import fs from 'fs/promises';
 const router = express.Router();
