@@ -1,91 +1,137 @@
 [
-    {
-      "id": 2,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC123",
-      "price": 29.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electrónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC123",
-      "price": 29.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electrónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 1,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC12344244",
-      "price": 2999.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electrónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC12333333444444433",
-      "price": 29.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electrónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC12333333435345345345435444444433",
-      "price": 29.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electrónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 6,
-      "status": true,
-      "thumbnails": []
-    },
-    {
-      "id": 7,
-      "title": "Producto de ejemplo",
-      "description": "Descripción del producto",
-      "code": "ABC12333333435345345345435444444433",
-      "price": 29.99,
-      "status": true,
-      "stock": 50,
-      "category": "Electroooónicos",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    }
-  ]
+  {
+    "title": "Producto 0",
+    "description": "Descripción del Producto 0",
+    "price": 500,
+    "thumbnail": "ruta/imagen/producto_0.jpg",
+    "code": "code0",
+    "stock": 100,
+    "id": 1
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del Producto 2",
+    "price": 502,
+    "thumbnail": "ruta/imagen/producto_2.jpg",
+    "code": "code2",
+    "stock": 98,
+    "id": 3
+  },
+  {
+    "title": "Producto 3",
+    "description": "Descripción del Producto 3",
+    "price": 503,
+    "thumbnail": "ruta/imagen/producto_3.jpg",
+    "code": "code3",
+    "stock": 97,
+    "id": 4
+  },
+  {
+    "title": "Producto 4",
+    "description": "Descripción del Producto 4",
+    "price": 504,
+    "thumbnail": "ruta/imagen/producto_4.jpg",
+    "code": "code4",
+    "stock": 96,
+    "id": 5
+  },
+  {
+    "title": "Producto 5",
+    "description": "Descripción del Producto 5",
+    "price": 505,
+    "thumbnail": "ruta/imagen/producto_5.jpg",
+    "code": "code5",
+    "stock": 95,
+    "id": 6
+  },
+  {
+    "title": "Producto 6",
+    "description": "Descripción del Producto 6",
+    "price": 506,
+    "thumbnail": "ruta/imagen/producto_6.jpg",
+    "code": "code6",
+    "stock": 94,
+    "id": 7
+  },
+  {
+    "title": "Producto 7",
+    "description": "Descripción del Producto 7",
+    "price": 507,
+    "thumbnail": "ruta/imagen/producto_7.jpg",
+    "code": "code7",
+    "stock": 93,
+    "id": 8
+  },
+  {
+    "title": "Producto 8",
+    "description": "Descripción del Producto 8",
+    "price": 508,
+    "thumbnail": "ruta/imagen/producto_8.jpg",
+    "code": "code8",
+    "stock": 92,
+    "id": 9
+  },
+  {
+    "title": "Producto 9",
+    "description": "Descripción del Producto 9",
+    "price": 509,
+    "thumbnail": "ruta/imagen/producto_9.jpg",
+    "code": "code9",
+    "stock": 91,
+    "id": 10
+  },
+  {
+    "title": "Producto 10",
+    "description": "Descripción del Producto 10",
+    "price": 510,
+    "thumbnail": "ruta/imagen/producto_10.jpg",
+    "code": "code10",
+    "stock": 90,
+    "id": 11
+  },
+  {
+    "title": "Producto 11",
+    "description": "Descripción del Producto 11",
+    "price": 511,
+    "thumbnail": "ruta/imagen/producto_11.jpg",
+    "code": "code11",
+    "stock": 89,
+    "id": 12
+  },
+  {
+    "title": "Producto 12",
+    "description": "Descripción del Producto 12",
+    "price": 512,
+    "thumbnail": "ruta/imagen/producto_12.jpg",
+    "code": "code12",
+    "stock": 88,
+    "id": 13
+  },
+  {
+    "title": "Producto 13",
+    "description": "Descripción del Producto 13",
+    "price": 513,
+    "thumbnail": "ruta/imagen/producto_13.jpg",
+    "code": "code13",
+    "stock": 87,
+    "id": 14
+  },
+  {
+    "title": "Producto 14",
+    "description": "Descripción del Producto 14",
+    "price": 514,
+    "thumbnail": "ruta/imagen/producto_14.jpg",
+    "code": "code14",
+    "stock": 86,
+    "id": 15
+  },
+  {
+    "title": "Producto 15",
+    "description": "Descripción del Producto 15",
+    "price": 515,
+    "thumbnail": "ruta/imagen/producto_15.jpg",
+    "code": "code15",
+    "stock": 85,
+    "id": 16
+  }
+]

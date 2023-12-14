@@ -1,61 +1,48 @@
 import express from 'express';
 import fs from 'fs/promises';
+import ProductManager from '../../ProductManager.js'; 
+
 const router = express.Router();
 
-const PRODUCTS_FILE_PATH = './productos.json';
+const productManager = new ProductManager('./productos.json'); 
 
 // Función para leer los productos desde el archivo
 const readProducts = async () => {
     try {
-        // Verificar si el archivo existe, si no, crearlo con un array vacío
-        await fs.access(PRODUCTS_FILE_PATH);
+        return await productManager.getProducts();
     } catch (error) {
-        await writeProducts([]);
-    }
-
-    try {
-        const data = await fs.readFile(PRODUCTS_FILE_PATH, 'utf-8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error('Error al leer el archivo de productos:', error);
+        console.error('Error al leer los productos:', error);
         throw error;
     }
 };
 
-// Función para escribir los productos en el archivo
 const writeProducts = async (products) => {
     try {
-        await fs.writeFile(PRODUCTS_FILE_PATH, JSON.stringify(products, null, 2), 'utf-8');
+        await productManager.saveToFile(products);
     } catch (error) {
-        console.error('Error al escribir en el archivo de productos:', error);
+        console.error('Error al escribir los productos:', error);
         throw error;
     }
 };
+
 
 // Ruta raíz para obtener todos los productos con posible limitación
 router.get('/', async (req, res) => {
     try {
-        const limit = req.query.limit ?? 10; // Utilizamos el operador de fusión nula
-        const products = await readProducts();
-
-        // Lógica para limitar la cantidad de productos
-        const limitedProducts = products.slice(0, limit);
-
-        res.json({ message: 'Lista de productos obtenida exitosamente', productos: limitedProducts });
+        const limit = req.query.limit ?? 10;
+        const products = await productManager.getProducts(limit);
+        res.json({ message: 'Lista de productos obtenida exitosamente', products });
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Error al obtener la lista de productos' });
     }
 });
 
-
 // Ruta para obtener un producto por su ID
 router.get('/:pid', async (req, res) => {
-    const productId = Number(req.params.pid); // Convertir el ID a número
-
+    const productId = Number(req.params.pid);
     try {
-        const products = await readProducts();
-        const product = products.find((p) => p.id === productId);
+        const product = await productManager.getProductById(productId);
 
         if (product) {
             res.json({ message: 'Producto obtenido exitosamente', producto: product });

@@ -1,16 +1,48 @@
 [
-    {
-      "id": 1,
-      "products": [
-        {"id": "producto1", "quantity": 2},
-        {"id": "producto2", "quantity": 1}
-      ]
-    },
-    {
-      "id": 2,
-      "products": [
-        {"id": "producto3", "quantity": 3}
-      ]
-    }
-  ]
-  
+  {
+    "id": "1",
+    "products": [
+      {
+        "id": "PRODUCT_625",
+        "quantity": 3
+      },
+      {
+        "id": "PRODUCT_40",
+        "quantity": 1
+      },
+      {
+        "id": "PRODUCT_311",
+        "quantity": 5
+      },
+      {
+        "id": "1",
+        "quantity": 1
+      },
+      {
+        "id": "2",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "products": [
+      {
+        "id": "PRODUCT_552",
+        "quantity": 6
+      },
+      {
+        "id": "PRODUCT_790",
+        "quantity": 10
+      },
+      {
+        "id": "PRODUCT_995",
+        "quantity": 1
+      },
+      {
+        "id": "PRODUCT_321",
+        "quantity": 5
+      }
+    ]
+  }
+]
