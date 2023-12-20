@@ -1,0 +1,19 @@
+<h2>Lista</h2>
+
+<div>
+    <h1>Hola, {{users.name}}!</h1>
+</div>
+
+{{#if isAdmin}}
+
+    {{#each lista}}
+    <div>
+        <p>ID: {{this.id}}</p>
+        <p>NOMBRE {{this.name}}</p>
+        <P>PRECIO {{this.price}}</p></P>
+    </div>
+
+    {{/each}}
+{{else}}
+    <p>No autorizado</p>
+{{/if}}
